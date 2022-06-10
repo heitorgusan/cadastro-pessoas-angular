@@ -1,0 +1,23 @@
+[ngModel] = "Variavel"  -> Captura o valor da propriedade mas não faz alteração -> Property binding;
+[(ngModel)] = "Variavel"  -> Captura o valor da propriedade e faz a alteração -> Two-way data binding
+(ngModel) = "function()" -> Chama a função -> Event binding
+
+<tag>{{variable}}</tag> -> Exibir variável
+
+Com ele é possível realizar a comunicação de um componente com o DOM da aplicação, tê-lo como 
+aliado facilitará muito a vida de uma pessoa que desenvolve com o Angular.
+
+Eventos:
+
+@Output() para criar um evento para o seu componente.
+@Input() Utilizar o metadata @Input() para receber valores em um componente;
+
+
+Sintaxe ngFor -> *ngFor="let transferencia of transferencias"
+Sintage nfIf -> *ngIf = "transferencia?.lenght>0; else listaVazia" 
+<ng-template #listaVazia>
+</ng-template>
+
+
+//O angular aceita alguns pipe como datepipe -> exemplo: <td>{{transferencia.date | date: "short"}}</td>
+//dica: e é bom localizar a data com LOCALE_ID
